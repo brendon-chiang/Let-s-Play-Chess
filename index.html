@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LetsPlayChess</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript"> if (!window.console) console = {log: function() {}};</script>
+</head>
+<body>
+<header>
+    <h3>Let's Play Chess</h3>
+</header>
+<div id="FenInDiv">
+    Fen:<br/>
+    <input type="text" id="fenIn"/>
+    <button type="button" id="SetFen">Set Position</button>
+</div>
+<div id="Board"></div>
+<div id="EngineOutput">
+    <button type="button" id="NewGameButton">Move Now</button><br/>
+    <button type="button" id="UndoButton">Take Back</button><br/>
+    <button type="button" id="FlipBoard">Flip Board</button>
+    <span id="GameStatus"></span>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/defs.js"></script>
+<script src="js/io.js"></script>
+<script src="js/board.js"></script>
+<script src="js/movement.js"></script>
+<script src="js/makemove.js"></script>
+<script src="js/evaluate.js"></script>
+<script src="js/pvtable.js"></script>
+<script src="js/search.js"></script>
+<script src="js/GUI.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
